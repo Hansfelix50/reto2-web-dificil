@@ -6,6 +6,258 @@ html {
     line-height: 1.4;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 122px 1fr 40px 40px;
+    height: 100vh;
+}
+
+img.profile {
+    height: 33px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.container {
+    margin-left: 150px
+}
+
+nav {
+    padding: 0px 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container_nav {
+    position: relative;
+    height: 75px
+}
+
+.container_links {
+    height: 47px;
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 13px;
+}
+
+.link.active {
+    border-bottom: 3px solid #1A73E8;
+    font-weight: bold;
+    color: #1A73E8;
+    box-sizing: border-box;
+}
+
+.link.active a {
+    color: #1A73E8;
+}
+
+a {
+    text-decoration: none;
+    color: #777
+}
+
+nav .container_nav2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 75px
+}
+
+.container_nav2 a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #666;
+}
+
+.container_nav2 .img_9points {
+    height: 18px;
+    margin: 10px;
+    opacity: .55
+}
+
+.container_nav2 .campana {
+    margin: 10px;
+    background-color: #666;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campana .img_campana {
+    height: 12px;
+    margin: 0 auto;
+}
+
+main p {
+    font-size: 13px
+}
+
+main .container {
+    padding-left: 35px;
+}
+
+.container_main h3 {
+    font-weight: 100;
+    font-size: 18px
+}
+
+.resultado {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.resultado a {
+    font-size: 18px;
+    color: #1a0dab;
+}
+
+.resultado a:hover {
+    text-decoration: underline;
+}
+
+.resultado h4 {
+    margin: 0px;
+    color: #006621;
+    font-size: 14px;
+    font-weight: 100
+}
+
+.resultado p {
+    margin: 0px;
+}
+
+.resultado time {
+    color: #808080;
+}
+
+.busqRelacionadas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px
+}
+
+.busqRelacionadas a {
+    font-size: 14px;
+    color: #1a0dab;
+    margin: 5px 0px;
+}
+
+.busqRelacionadas a:hover {
+    text-decoration: underline;
+}
+
+.img_google {
+    width: 120px;
+    position: absolute;
+    left: -140px;
+    top: 20px;
+}
+
+.search_box {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    width: 632px;
+    height: 44px;
+    box-shadow: 0px 2px 4px 0px #d4d4d4;
+    margin: 15px auto;
+    transition: all .3s ease
+}
+
+.search_box:hover {
+    box-shadow: 0px 2px 4px 0px #a5a5a5;
+    transition: all .3s ease
+}
+
+.search_box input {
+    width: 100%;
+    margin-right: 55px;
+    margin-left: 10px;
+    border: 0px solid;
+}
+
+.search_box input:focus {
+    outline: 0px;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 10px
+}
+
+.icon>img {
+    width: 25px
+}
+
+.btns {
+    margin-top: 30px
+}
+
+.btns input {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    height: 36px;
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 13px
+}
+
+.btns input:hover {
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+footer {
+    background-color: #f2f2f2;
+    outline: 1px solid #e4e4e4;
+    padding: 0px 20px;
+}
+
+.container_items {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 40px;
+}
+
+.container_items span {
+    margin: 10px;
+    color: #666;
+    font-size: 15px;
+}
+
+.container_items a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #666;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -55,47 +307,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-    width: 100%;
-}
-
-nav {
-    width: 20%;
-    height: 100%;
-    float: left;
-}
-
-main {
-    width: 80%;
-    text-align: center;
-    display: inline-block;
-}
-
-footer {
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-
-
-
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
-}
+@media only screen and (min-width: 35em) {}
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
 
-}
 
 /* ==========================================================================
    Helper classes
@@ -145,6 +369,7 @@ footer {
     *zoom: 1;
 }
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
@@ -158,51 +383,41 @@ footer {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
